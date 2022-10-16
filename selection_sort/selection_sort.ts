@@ -1,3 +1,5 @@
+import { swapArrayElements } from '../helpers/arrays';
+
 export function selectionSort(
   array: number[],
   _startFromIndex?: number
@@ -15,10 +17,7 @@ export function selectionSort(
     }
   }
 
-  [array[startFromIndex], array[minIndex]] = [
-    array[minIndex],
-    array[startFromIndex],
-  ];
+  swapArrayElements(array, startFromIndex, minIndex);
 
   return selectionSort(array, startFromIndex + 1);
 }
