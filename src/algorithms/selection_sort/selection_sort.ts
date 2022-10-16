@@ -1,4 +1,4 @@
-import { swapArrayElements } from '../helpers/arrays';
+import { swapArrayElements } from '../../helpers/arrays';
 
 export function selectionSort(
   array: number[],
